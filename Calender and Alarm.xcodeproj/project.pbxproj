@@ -19,6 +19,7 @@
 		0238EC8B1C723F21000D20B7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238EC8A1C723F21000D20B7 /* InterfaceController.swift */; };
 		0238EC8D1C723F21000D20B7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238EC8C1C723F21000D20B7 /* ExtensionDelegate.swift */; };
 		0238EC8F1C723F21000D20B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0238EC8E1C723F21000D20B7 /* Assets.xcassets */; };
+		0238EC9F1C72429E000D20B7 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0238EC9E1C72429E000D20B7 /* Events.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		0238EC8C1C723F21000D20B7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0238EC8E1C723F21000D20B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0238EC901C723F21000D20B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0238EC9E1C72429E000D20B7 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		0238EC891C723F21000D20B7 /* Calender and Alarm WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0238EC9E1C72429E000D20B7 /* Events.swift */,
 				0238EC8A1C723F21000D20B7 /* InterfaceController.swift */,
 				0238EC8C1C723F21000D20B7 /* ExtensionDelegate.swift */,
 				0238EC8E1C723F21000D20B7 /* Assets.xcassets */,
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0238EC9F1C72429E000D20B7 /* Events.swift in Sources */,
 				0238EC8D1C723F21000D20B7 /* ExtensionDelegate.swift in Sources */,
 				0238EC8B1C723F21000D20B7 /* InterfaceController.swift in Sources */,
 			);

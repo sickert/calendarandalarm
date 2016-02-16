@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calender_and_Alarm_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" id="bLj-gt-goP">
+                            <items>
+                                <button width="55" height="36.5" alignment="left" verticalAlignment="center" title="next" id="bpG-QI-QNY">
+                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextButtonAction" destination="AgC-eL-Hgc" id="884-Yc-MTw"/>
+                                    </connections>
+                                </button>
+                                <button width="55" alignment="right" verticalAlignment="center" title="save" id="UW2-wB-G1Z">
+                                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="saveButtonAction" destination="AgC-eL-Hgc" id="BJ6-Uo-Zt0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <table alignment="left" verticalAlignment="bottom" id="cLG-JB-XAv">
+                            <items>
+                                <tableRow id="Ji4-NJ-ddu">
+                                    <group key="rootItem" width="1" alignment="left" id="Hgn-3g-XSO"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <timer alignment="left" id="zgi-aV-biI"/>
+                        <label alignment="left" text="Label" id="DIm-8M-FJj"/>
+                        <dateLabel alignment="left" id="IJA-h2-XFu">
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="date" destination="IJA-h2-XFu" id="b1f-MM-oXi"/>
+                        <outlet property="eventLabel" destination="DIm-8M-FJj" id="ROx-fA-SEV"/>
+                        <outlet property="nextButton" destination="bpG-QI-QNY" id="0zu-Yt-eYI"/>
+                        <outlet property="saveButton" destination="UW2-wB-G1Z" id="ecq-rU-ZWS"/>
+                        <outlet property="timerLabel" destination="zgi-aV-biI" id="2Jk-Z5-vb7"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
